@@ -108,128 +108,114 @@
 </head>
 <body style="color: #4C5860;font-family:LatoWeb,Helvetica Neue,Helvetica,Arial,sans-serif;    font-size: 14px;line-height: 1.5;">
 
-<h2>Numbers</h2>
-Numbers in Python work like numbers you've seen elsewhere; you can apply all the things you've learned about basic math to Python. Python supports two types of numbers - integers and floating point numbers. Number data types store numeric values.<BR><BR>
 
+Here is an example of how to build a list.
 <div class="container">
 
+ <div data-datacamp-exercise data-lang="python" data-height="auto">
+ <code data-type="pre-exercise-code"> </code>
 
-<b>int (signed integers)</b> − They are often called just <b>integers</b> or <b>ints</b>, are positive or negative whole numbers with no decimal point.<BR>
-<b>long (long integers)</b> − Also called longs, they are integers of unlimited size, written like integers and followed by an uppercase or lowercase L.<BR><BR>
+<code data-type="sample-code">
+mylist = []
+mylist.append(1)
+mylist.append(2)
+mylist.append(3)
 
-This defines an <strong>integer</strong>
-      <div data-datacamp-exercise data-lang="python" data-height="auto">
-        <code data-type="pre-exercise-code"> </code>
+print(mylist[0]) # prints 1
+print(mylist[1]) # prints 2
+print(mylist[2]) # prints 3
+print("\n" + str(type(mylist)) + "\n")
+print(mylist)
+</code>
 
-        <code data-type="sample-code">
-        myint = 7
-        print(myint)
-        print( type(myint) )
-        </code>
-        </code>
-        <code data-type="solution">
-        </code>
-        <code data-type="sct">
-        </code>
-        <div data-type="hint">Just press <code>Run</code>! </div>
-      </div>
-    </div>
-  <BR><BR>
-  <b>float (floating point real values)</b> − Also called <b>floats</b>, they represent real numbers and are written with a decimal point dividing the integer and fractional parts. Floats may also be in scientific notation, with E or e indicating the power of 10 (2.5e2 = 2.5 x 102 = 250).<BR><BR>
-  
-  To define a <B>floating point number</B>, you may use one of the following notations:
-      <div data-datacamp-exercise data-lang="python" data-height="auto">
-        <code data-type="pre-exercise-code"> </code>
+<code data-type="solution"></code>
+<code data-type="sct"></code>
+<div data-type="hint">Just press <code>Run</code>! </div>
+</div>
+</div>
 
-        <code data-type="sample-code">
-        myfloat = 7.0
-        print(myfloat)
-        print( type(myfloat) )
-
-        myfloat = float(7)
-        print(myfloat)
-        print( type(myfloat) )
-        </code>
-        </code>
-        <code data-type="solution">
-        </code>
-        <code data-type="sct">
-        </code>
-        <div data-type="hint">Just press <code>Run</code>! </div>
-      </div>
-    </div>
-<BR><BR>
-
-  <h2>Strings</h2>  
-
-  <B>Strings</B> are defined either with a single quote or a double quotes.
-      <div data-datacamp-exercise data-lang="python" data-height="auto">
-        <code data-type="pre-exercise-code"> </code>
-
-        <code data-type="sample-code">
-        mystring = 'hello'
-        print(mystring)
-        print( type(mystring) )
-
-        mystring = "hello"
-        print(mystring)
-        print( type(mystring) )
-        </code>
-        </code>
-        <code data-type="solution">
-        </code>
-        <code data-type="sct">
-        </code>
-        <div data-type="hint">Just press <code>Run</code>! </div>
-      </div>
-    </div>
-<BR><BR>
-The difference between the two is that using double quotes makes it easy to include apostrophes (whereas these would terminate the string if using single quotes)
-      <div data-datacamp-exercise data-lang="python" data-height="auto">
-        <code data-type="pre-exercise-code"> </code>
-
-        <code data-type="sample-code">
-        mystring = "Don't worry about apostrophes"
-        print(mystring)
-        </code>
-        </code>
-        <code data-type="solution">
-        </code>
-        <code data-type="sct">
-        </code>
-        <div data-type="hint">Just press <code>Run</code>! </div>
-      </div>
-    </div>
-
-There are additional variations on defining strings that make it easier to include things such as carriage returns, backslashes and Unicode characters. 
-The <a href="https://docs.python.org/2.0/ref/strings.html"> following link </a> is a list of escape or non-printable characters that can be represented with backslash notation.
-
-
+I sneakly snuck <code>str(type(mylist))</code> into this example - as an example to cast one type of object to a string to get it to print cleanly.
 <BR><BR><BR>
-Simple <B>operators</B> can be executed on numbers and strings:
-      <div data-datacamp-exercise data-lang="python" data-height="auto">
-        <code data-type="pre-exercise-code"></code>
 
-        <code data-type="sample-code">
-        one = 1
-        two = 2
-        three = one + two
-        print(three)
-        print( type(three) )
+Accessing an index which does not exist generates an exception (an error). Remember: Lists start indexing at 0.
+<div class="container">
 
-        hello = "hello"
-        world = "world"
-        helloworld = hello + " " + world
-        print(helloworld)
-        print( type(helloworld) )
-        </code>
-        <code data-type="solution">
-        </code>
-        <code data-type="sct">
-        </code>
-        <div data-type="hint">Just press <code>Run</code>! </div>
-      </div>
-    </div>
-<BR><BR>
+ <div data-datacamp-exercise data-lang="python" data-height="auto">
+ <code data-type="pre-exercise-code"> </code>
+
+<code data-type="sample-code">
+mylist = []
+mylist.append(1)
+mylist.append(2)
+mylist.append(3)
+
+print(mylist[10]) # prints ??? - nothing but an error. 
+#changing 10 to  0,1,2 fixes this.
+
+</code>
+
+<code data-type="solution"></code>
+<code data-type="sct"></code>
+<div data-type="hint">Just press <code>Run</code>! </div>
+</div>
+</div>
+<BR><BR><BR>
+<H2>Exercise:</H2>
+In this exercise, you will need to add numbers and strings to the correct lists using the "append" list method. 
+
+<ul>
+<li> First, You must add the numbers 1,2, and 3 to the "numbers" list.</li>
+<li> Then add the words 'hello' and 'world' to the strings variable.</li>
+<li> Fill in the variable second_name with the second name in the names list, using the brackets operator [].</li>
+</ul>
+<div class="container">
+
+ <div data-datacamp-exercise data-lang="python" data-height="auto">
+ <code data-type="pre-exercise-code"> </code>
+
+<code data-type="sample-code">
+numbers = []
+strings = []
+names = [&#34;John&#34;, &#34;Eric&#34;, &#34;Jessica&#34;]
+
+# write your code here
+second_name = None
+
+
+# this code should write out the filled arrays and the second name in the names list (Eric).
+print(numbers)
+print(strings)
+print(&#34;The second name on the names list is %s&#34; % second_name)
+</code>
+
+<code data-type="solution">
+numbers = []
+strings = []
+names = [&#34;John&#34;, &#34;Eric&#34;, &#34;Jessica&#34;]
+
+# write your code here
+numbers.append(1)
+numbers.append(2)
+numbers.append(3)
+
+strings.append(&#34;hello&#34;)
+strings.append(&#34;world&#34;)
+
+second_name = names[1]
+
+# this code should write out the filled arrays and the second name in the names list (Eric).
+print(numbers)
+print(strings)
+print(&#34;The second name on the names list is %s&#34; % second_name)
+</code>
+<code data-type="sct">
+test_output_contains(&#34;[1,2,3]&#34;, no_output_msg= &#34;Make sure that you have added the 3 values to the `numbers` list.&#34;)
+test_output_contains(&#34;[&#39;hello&#39;, &#39;world&#39;]&#34;, no_output_msg= &#34;Make sure that you have added the `strings`.&#34;)
+test_output_contains(&#34;The second name on the names list is Eric&#34;, no_output_msg= &#34;Did you fill in the variable `second_name` with the second name in the names list?&#34;)
+success_msg(&#34;Great Job!&#34;)
+</code>
+<div data-type="hint">Look at the top examples to access and add to lists! </div>
+</div>
+</div>    
 
 </html>
