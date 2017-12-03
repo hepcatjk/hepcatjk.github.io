@@ -110,50 +110,25 @@
 
 
 
-All parameters (arguments) in the Python language are passed by reference. It means if you change what a parameter refers to within a function, the change also reflects back in the calling function. For example −
+
+
+
+Here we will print the ID value (think memory location) of the variable.
 <div class="container">
 
  <div data-datacamp-exercise data-lang="python" data-height="auto">
  <code data-type="pre-exercise-code"> </code>
 
 <code data-type="sample-code">
-def changeme( mylist ):
-    "This changes a passed list into this function"
-    mylist = [1,2,3,4]; # This would assign a new reference in mylist
-    return
-
-# Now you can call changeme function
-mylist = [10,20,30];
-print("Values outside the function:  {}".format(mylist))
-
-changeme( mylist );
-print("Values outside the function:  {}".format(mylist))
-
-
-</code>
-<code data-type="solution"></code>
-<code data-type="sct"></code>
-<div data-type="hint">Just press <code>Run</code>! </div>
-</div>
-</div>
-
-
-
-<div class="container">
-
- <div data-datacamp-exercise data-lang="python" data-height="auto">
- <code data-type="pre-exercise-code"> </code>
-
-<code data-type="sample-code">
-def ref_demo(x):
+def RefDemo(x):
     print("fun: x=",x," id=",id(x)) #value and id are the same
     x=42
     print("fun: x=",x," id=",id(x)) #value and id change
 
 x =9   
-print("x=",x," id=",id(x))
-ref_demo(x)
-print("x=",x," id=",id(x)) #value and id are the same as before the function
+print("out: x=",x," id=",id(x))
+RefDemo(x)
+print("out: x=",x," id=",id(x)) #value and id are the same as before the function
 
 </code>
 <code data-type="solution"></code>
@@ -161,6 +136,50 @@ print("x=",x," id=",id(x)) #value and id are the same as before the function
 <div data-type="hint">Just press <code>Run</code>! </div>
 </div>
 </div>
+<BR>
 
+Notice in this example when the values <b>change</b> and when they <b>stay the same</b>.
+<div class="container">
+
+ <div data-datacamp-exercise data-lang="python" data-height="auto">
+ <code data-type="pre-exercise-code"> </code>
+
+<code data-type="sample-code">
+def ChangeMe( mylist ):
+    "This changes a passed list into this function"
+    mylist = [1,2,3,4]; # This would assign a new reference in mylist
+    print("Values inside the Change Me function:  {}".format(mylist))
+    return
+
+def AddToMe( mylist ):
+    "This appends a passed list into this function"
+    mylist.append(0);
+    mylist.append(1);
+    mylist.append(2);
+    print("Values inside the AddTo Me function:  {}".format(mylist))
+    return    
+
+# Now you can call changeme function
+mylist = [10,20,30];
+print("Values:  {}".format(mylist))
+
+ChangeMe( mylist );
+print("Values outside the function:  {}".format(mylist))
+
+AddToMe( mylist );
+print("Values outside the function:  {}".format(mylist))
+
+ChangeMe( mylist );
+print("Values outside the function:  {}".format(mylist))
+
+
+
+</code>
+<code data-type="solution"></code>
+<code data-type="sct"></code>
+<div data-type="hint">Just press <code>Run</code>! </div>
+</div>
+</div>
+This is sometimes called a <b>side effect</b> since the passed value has been modified and it may not be what the programmer meant to do.
 
 </html>
