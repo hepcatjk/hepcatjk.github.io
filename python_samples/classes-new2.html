@@ -115,11 +115,15 @@
         <code data-type="sample-code">
 class Point:
 
+    TotalNumberOfPoints = 0  # new Class Variable
+    MAX_Inst = 2
+
     def __new__(cls,*args,**kwargs):
         print ("new executing")
-        print(cls)
-        print(args)
-        print(kwargs)        
+        if (cls.TotalNumberOfPoints >= cls.MAX_Inst):
+            print("ERROR: Cannot create more Point objects!")
+            return
+        cls.TotalNumberOfPoints += 1
         return super().__new__(cls)    
 
     #Default object initialization
@@ -129,10 +133,21 @@ class Point:
         self.mY = 0.0
         self.mZ = 0.0
 
+    @classmethod  # static method that looks for the class variable
+    def how_many(cls):
+        """Prints the current population."""
+        print("We have {:d} points.".format(cls.TotalNumberOfPoints))
+
 #Remember this method gets executed sinces its our 'main'
 def main():
+    Point.how_many()
+
     p1 = Point()
     p2 = Point()
+    p3 = Point() # cannot create you!
+
+    Point.how_many()
+
 
 if __name__ == "__main__":
     main()
