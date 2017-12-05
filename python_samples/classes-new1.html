@@ -123,16 +123,16 @@ class Point:
         return super().__new__(cls)    
 
     #Default object initialization
-    def __init__(self):
+    def __init__(self, x=0.0, y=0.0, z=0.0):
         print ("init executing")
-        self.mX = 0.0
-        self.mY = 0.0
-        self.mZ = 0.0
+        self.mX = x
+        self.mY = y
+        self.mZ = z
 
 #Remember this method gets executed sinces its our 'main'
 def main():
-    p1 = Point()
-    p2 = Point()
+    p1 = Point(x=4.0)
+    p2 = Point(3.0,4.0,5.0)
 
 if __name__ == "__main__":
     main()
