@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DataCamp Light | Standalone example</title>
+  <script>
+  /*
+ DataCamp Light
+ Version 1.1.0
+ */
+! function() {
+    "use strict";
+
+    function e() {
+        function e(e) {
+            return null !== location.hostname.match(e)
+        }
+
+        function t(e) {
+            for (var t = 0; t < i.length; t++) i[t].getElementsByTagName("a")[0].href = e
+        }
+
+        function a() {
+            for (; i[0];) i[0].parentNode.removeChild(i[0])
+        }
+        var i = document.getElementsByClassName("powered-by-datacamp");
+        e("r-bloggers.com") ? t("https://www.datacamp.com?tap_a=5644-dce66f&tap_s=10907-287229") : a()
+    }
+
+    function t(e) {
+        e.className += " datacamp-exercise";
+        if ("height" in e.dataset && "auto" !== e.dataset.height) {
+            var t = Math.round(e.dataset.height);
+            if (isNaN(t)) console.log("Invalid height attribute.");
+            else if (t >= p) {
+                e.style.height = t + "px";
+                var a = "height:" + t + "px;";
+                e.setAttribute("style", a)
+            } else console.log("The height attribute should be >= " + p + ".")
+        }
+        "encoded" in e.dataset && (e.innerHTML = '<div class="encoded">' + e.innerHTML.trim() + "</div>"), e.innerHTML += '<!--[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><div ng-controller="NormalExerciseController"><div class="dcl-exercise-area" resize-layout=""><div class="dcl-left-pane" ng-class="{\'dcl-mini\': useMiniLayout}"><ul class="dcl-content--tab"><li><a href="" ng-click="activateLeftTab(\'usercode\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'usercode\')}">script.{{backendConfig.extension}}</a></li><li ng-show="solutionTabShown"><a class="dcl-animation--flash" href="" ng-click="activateLeftTab(\'solution\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'solution\')}">solution.{{backendConfig.extension}}</a></li><li><a href="" ng-show="useMiniLayout" ng-click="activateLeftTab(\'console\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'console\')}">{{backendConfig.console}}</a></li><li><a href="" ng-show="useMiniLayout && plotTabShown" ng-click="activateLeftTab(\'plots\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'plots\')}">Plots</a></li></ul><div class="dcl-content--tab-body"><div code-editor="" control="editor" ng-show="isActiveLeftTab(\'usercode\') || isActiveLeftTab(\'solution\')" ng-model="userCode"></div><div ng-show="isActiveLeftTab(\'console\')" class="dcl-console-target dcl-console-mini-target"></div><div ng-show="isActiveLeftTab(\'plots\')" class="dcl-plots-mini-target"></div><div growl="" ng-show="!isActiveLeftTab(\'plots\')" inline="true" limit-messages="1" sct-feedback="" class="sct-feedback-container"></div></div></div><div ng-show="!useMiniLayout" class="dcl-right-pane clearfix"><ul class="dcl-content--tab"><li><a href="" ng-click="activateRightTab(\'console\')" ng-class="{\'dcl-active\': isActiveRightTab(\'console\')}">{{backendConfig.console}}</a></li><li><a ng-show="plotTabShown" href="" ng-click="activateRightTab(\'plots\')" ng-class="{\'dcl-active\': isActiveRightTab(\'plots\')}">Plots</a></li></ul><div class="dcl-content--tab-body"><div ng-show="isActiveRightTab(\'console\')" control="console" class="dcl-console-target dcl-console-full-target"><console class="dcl-console"></console></div><div ng-show="isActiveRightTab(\'plots\')" class="dcl-plots-full-target"><plots-container class="dcl-plots-container"></plots-container></div></div></div></div><action-panel exercise="exercise"></action-panel></div>';
+        var i = '<div class="powered-by-datacamp"><a href="https://www.datacamp.com">Powered by DataCamp<div class="logo"></div></a></div>',
+            o = document.createElement("div");
+        o.innerHTML = i;
+        var c = o.firstChild;
+        e.parentNode.insertBefore(c, e.nextSibling)
+    }
+
+    function a(e) {
+        var t = document.createElement("script");
+        t.type = "text/javascript", t.src = e, t.charset = "utf-8", l("body", t)
+    }
+
+    function i(e) {
+        var t = document.createElement("link");
+        t.type = "text/css", t.rel = "stylesheet", t.href = e, l("head", t)
+    }
+
+    function o() {
+        var a = document.querySelectorAll("[data-datacamp-exercise]");
+        0 === a.length && console.log("No DataCamp Light exercises found. Make sure the exercise has the 'data-datacamp-exercise' attribute.");
+        for (var i = 0; i < a.length; i++) ! function(e) {
+            var i = a[e];
+            (" " + i.className + " ").indexOf(" datacamp-exercise ") > -1 || t(i)
+        }(i);
+        e()
+    }
+
+    function c() {
+        o(), a(g + "script-8fa338a2dc.js")
+    }
+
+    function n() {
+        o(), window.bootstrapDCLightExercises()
+    }
+
+    function s() {
+        d();
+        for (var e = [g + "style-8c2f2e17fe.css", "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"], t = 0; t < e.length; t++) i(e[t])
+    }
+
+    function l(e, t) {
+        document.getElementsByTagName(e)[0].appendChild(t)
+    }
+
+    function d() {
+        var e = document.createElement("style");
+        e.type = "text/css", l("head", e);
+        var t = 'div.datacamp-exercise {  margin: 0;  border: 1px solid #d5eaef;  background: none;  position: relative;  min-height: 300px;  color: black;  box-shadow: none;}div[data-datacamp-exercise] {  margin: 0;  border: 1px solid #d5eaef;  background: #fff url(https://cdn.datacamp.com/spinner.gif) no-repeat center center !important;  background-size: auto 80px !important;  position: relative;  min-height: 300px;  color: transparent;  box-shadow: none;}div[data-datacamp-exercise] > code,div[data-datacamp-exercise] > div,div[data-datacamp-exercise] > p {  display: none;}div.powered-by-datacamp {  margin: 5px 0;  display: block;}div.powered-by-datacamp a {@import "https://fonts.googleapis.com/css?family=Open+Sans";  font-family: "Open Sans", sans-serif;  text-decoration: none;  border: 0;  color: #3ac;  font-size: 20px;}div.powered-by-datacamp .logo {  vertical-align: sub;  display: inline-block;  background: url("https://cdn.datacamp.com/dcl/assets/images/logo_blue.svg") no-repeat center center;  background-size: contain;  height: 27px;  width: 23px;  margin-left: 4px;}';
+        e.styleSheet ? e.styleSheet.cssText = t : e.innerHTML = t
+    }
+
+    function r() {
+        return "function" == typeof window.initAddedDCLightExercises
+    }
+    var p = 300,
+        g = "https://cdn.datacamp.com/dcl/";
+    r() ? console.log("Warning: tried to load DataCamp Light multiple times.") : (window.initAddedDCLightExercises = n, s(), "complete" == document.readyState || "loaded" == document.readyState || "interactive" == document.readyState ? c() : document.addEventListener("DOMContentLoaded", c))
+}();
+  
+  
+  </script>
+
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        </code>
+        <code data-type="sample-code">
+class Point:
+    ''' The class Point represents a 3D point
+       Instance attributes: x,y,z '''
+
+    def __init__(self):
+        '''Default object initialization'''
+        self.mX = 0.0
+        self.mY = 0.0
+        self.mZ = 0.0
+
+    def __init__(self, x=0.0, y=0.0, z=0.0):
+        '''Custom initialization'''
+        self.mX = x
+        self.mY = y 
+        self.mZ = z
+
+    def __str__(self):
+        '''Print out the String of this object's values'''
+        return '({}, {}, {})'.format(
+            str(self.mX),str(self.mY),str(self.mZ))
+
+    def SetPoint(self, x=None, y=None, z=None):
+        '''Set new locations for the point'''
+        if x is not None:
+            self.mX = x
+        if y is not None:
+            self.mY = y
+        if z is not None:
+            self.mZ = z
+
+    def Distance(self, other):
+        '''Returns the distance'''
+        d = (( (other.mX - self.mX) ** 2) 
+            + ((other.mY - self.mY) ** 2) 
+            + ((other.mZ - self.mZ) ** 2)) ** 0.5
+        return d
+
+
+class Shape:
+    ''' A general Shape class '''
+
+    def __init__(self, p, n):
+        '''Set the name and vertices of the shape'''
+        self.name = n
+        self.vertices = p
+
+
+    def Area(self):
+        '''Caculate the area of the shapes'''
+        raise NotImplementedError("Please Implement the Area method!")
+        #This containts a check to make sure subclasses implement this.
+        return None
+
+    def __str__(self):
+        '''Definition for the print statement'''
+        return "Shape: '{}' of type ({}) has {} points.".format(
+            self.name,str(self.__class__.__name__),
+            str(len(self.vertices)))
+
+
+class Shape3D:
+    ''' A general 3D Shape class '''
+
+    def Volume(self):
+        '''Caculate the Volume of the shapes'''
+        raise NotImplementedError("Please Implement the Volume method!")
+        #This containts a check to make sure subclasses implement this.
+        return None
+
+
+
+class Rectangle(Shape):
+    '''Rectangle is a shape with 4 vertices'''
+
+    def __init__(self, p, n):
+        '''Rectangle vs: lower left, upper left, upper right, lower right'''
+        if len(p) != 4:
+            print('FATAL ERROR: A rectangle has 4 points.')
+            return
+        Shape.__init__(self,p,n)
+
+    def Area(self):
+       '''Area of a rectangle is length*width'''
+       length = self.vertices[0].Distance(self.vertices[1])
+       width = self.vertices[1].Distance(self.vertices[2])
+       return length*width
+
+
+class Circle(Shape):
+    '''Circle is a shape with 1 vertex and a radius'''
+
+    def __init__(self, p, r, n):
+        '''Set the center point and radius '''
+        self.radius = r
+        if len(p) != 1:
+            print('FATAL ERROR: A rectangle has 1 center point.')
+            return
+        Shape.__init__(self,p,n)
+
+    def Area(self):
+       '''Radius is pi*r^2 '''
+       return 3.14159 * self.radius**2
+
+    def Circumference(self):
+        '''Caculate the Circle Circumference'''
+        return self.radius * 2 * 3.14159
+
+    def __str__(self):
+        '''the print statement: uses super print + radius info'''
+        return Shape.__str__(self) + \
+            " It has a radius of: {}.".format(str(self.radius))
+
+
+class Cube(Rectangle, Shape3D):
+    '''Cube is a 3d shape with 8 vertices'''
+
+    def __init__(self, p, n):
+        '''Rectangle vs: lower left, upper left, upper right, lower right'''
+        if len(p) != 8:
+            print('FATAL ERROR: A Cube has 8 points.')
+            return
+        Shape.__init__(self,p,n)
+
+    def Area(self):
+       '''Area of a cube is length*width*height'''
+
+       #this should be defined by lower left vertex - clockwise
+       #then the upper left vertex - clockwise
+       # hence the 5th vertex (id[4]) should be above the 1st (id[0])
+       length = self.vertices[0].Distance(self.vertices[1])
+       width = self.vertices[1].Distance(self.vertices[2])
+       height = self.vertices[0].Distance(self.vertices[4])
+       return length*width*height
+
+    def Volume(self):
+       '''Volume of a cube is a*3'''
+       return self.Area() * 3
+       
+
+class Sphere(Circle, Shape3D):
+    '''Sphere is a shape with 1 vertex and a radius'''
+
+    def __init__(self, p, r, n):
+        '''Set the center point and radius '''
+        Circle.__init__(self,p,r,n)
+
+    def Area(self):
+       '''Radius is pi*r^2 '''
+       return 4 * 3.14159 * self.radius**2
+
+    def Volume(self):
+        '''Caculate the Sphere Circumference'''
+        return 4/3 * 3.14159 * self.radius * 3
+
+
+
+#Remember this method gets executed sinces its our 'main'
+def main():
+    #Make a rectangle
+    p1 = [Point(0.0,0.0,0.0), Point(0.0,3.0,0.0), 
+          Point(2.0,3.0,0.0), Point(2.0,0.0,0.0) ]
+    r = Rectangle(p1,"Rectangle 1")
+    print(r)
+    print("Rectangle area is:", r.Area())
+
+    #make a Circle
+    p2 = [Point(0.0,0.0,0.0)]
+    c = Circle(p2, 4.0, "Circle 1")
+    print(c)
+    print("Circle area is:",c.Area())
+
+    #Make a Cube
+    p3 = [Point(0.0,0.0,0.0), Point(0.0,3.0,0.0), 
+          Point(2.0,3.0,0.0), Point(2.0,0.0,0.0),
+          Point(0.0,0.0,4.0), Point(0.0,3.0,4.0), 
+          Point(2.0,3.0,4.0), Point(2.0,0.0,4.0)]
+    cub = Cube(p3,"Cube 1")
+    print(r)
+    print("Cube area is:", cub.Area())
+    print("Cube volume is:", cub.Volume())
+
+    #Make a Sphere
+    p4 = [Point(0.0,1.0,0.0)]
+    s = Sphere(p4, 3.0, "Sphere 1")
+    print(s)
+    print("Sphere area is:",s.Area())
+    print("Sphere volume is:",s.Volume())
+
+
+if __name__ == "__main__":
+    main()
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+  
+  
+  
+  
+</body>
+</html>
