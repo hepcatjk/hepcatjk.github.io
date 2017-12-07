@@ -110,52 +110,31 @@
 <div class="container">
       <div data-datacamp-exercise data-lang="python" data-height="auto">
         <code data-type="pre-exercise-code">
-          # no pec
+
         </code>
         <code data-type="sample-code">
-class Point:
-
+class C(object):
     def __init__(self):
-        self.mX = 0.0
-        self.mY = 0.0
-        self.mZ = 0.0
-        self.__name = "Point" #private
+        self.a = 123    # OK to access directly
+        self._a = 223   # should be considered protected
+        self.__a = 323  # considered private, name mangled
 
-    def __str__(self):
-        return '({}, {}, {})'.format(str(self.mX),str(self.mY),str(self.mZ))
+    def __Test(self):
+        self.__a = 1 
 
-    def SetPoint(self, x=None, y=None, z=None):
-        if x is not None: 
-            self.mX = x    
-        if y is not None:  
-            self.mY = y
-        if z is not None:
-            self.mZ = z
-
-    def __Distance(self, other):   # I made this private for show!
-        d = (( (other.mX - self.mX) ** 2) 
-            + ((other.mY - self.mY) ** 2) 
-            + ((other.mZ - self.mZ) ** 2)) ** 0.5
-        return d
+    def CallIt(self):
+        self.Test()
 
 
-#Remember this method gets executed sinces its our 'main'
-def main():
-    p1 = Point()
-    print (p1)
-
-    # Errror
-    p1.__name = "I'm ignoring I should not change you! - hehe!"
-
-    #Error
-    p1.__Distance()
-
-    # Not an ERROR ! - but never never do it!
-    p1._Point__name = "Tricked you!"
+c = C()
+c.a
+c._a
+c.CallIt()
 
 
-if __name__ == "__main__":
-    main()
+c.__a  # this will error
+c.__Test() # this will error
+
 
 
 </code>
