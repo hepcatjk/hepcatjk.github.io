@@ -113,29 +113,41 @@
           # no pec
         </code>
         <code data-type="sample-code">
-class P:
+class Point:
 
-    def __init__(self,x):
-        self.x = x
+    def __init__(self):
+        self.mX = 0.0
+        self.mY = 0.0
+        self.mZ = 0.0
+        self._name = "Point" #Protected
 
-    @property
-    def x(self):
-        return self.__x
+    def __str__(self):
+        return '({}, {}, {})'.format(str(self.mX),str(self.mY),str(self.mZ))
 
-    @x.setter
-    def x(self, x):
-        if x < 0:
-            self.__x = 0
-        elif x > 1000:
-            self.__x = 1000
-        else:
-            self.__x = x
+    def SetPoint(self, x=None, y=None, z=None):
+        if x is not None: 
+            self.mX = x    
+        if y is not None:  
+            self.mY = y
+        if z is not None:
+            self.mZ = z
+
+    def _Distance(self, other):   # I made this protected for show!
+        d = (( (other.mX - self.mX) ** 2) 
+            + ((other.mY - self.mY) ** 2) 
+            + ((other.mZ - self.mZ) ** 2)) ** 0.5
+        return d
 
 
-p1 = P(1001)
-print(p1.x)
-p1.x = -12
-print(p1.x)
+#Remember this method gets executed sinces its our 'main'
+def main():
+    p1 = Point()
+    print (p1)
+    p1._name = "I'm ignoring I should not touch you! - hehe!"
+
+
+if __name__ == "__main__":
+    main()
 
 
 </code>
