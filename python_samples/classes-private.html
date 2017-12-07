@@ -122,8 +122,8 @@ class C(object):
     def __Test(self):
         self.__a = 1 
 
-    def CallIt(self):
-        self.Test()
+    def CallIt(self):  # I can call it inside
+        self.__Test()
 
 
 c = C()
