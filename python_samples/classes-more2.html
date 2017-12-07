@@ -129,9 +129,9 @@ class Point:
             str(self.mX),str(self.mY),str(self.mZ))
 
     def __add__(self,other):
-        x = self.x + other.x
-        y = self.y + other.y
-        z = self.z + other.z
+        x = self.mX + other.mX
+        y = self.mY + other.mY
+        z = self.mZ + other.mZ
         return Point(x,y,z)
 
 
