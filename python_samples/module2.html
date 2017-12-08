@@ -136,6 +136,7 @@ print(long_ago < now)
 difference = now - long_ago
 print(type(difference))
 
+
 </code>
 
         <code data-type="solution"></code>
@@ -145,7 +146,144 @@ print(type(difference))
     </div>
 
 
+<BR><BR><BR>
 
+
+The arguments to initialize a time instance are optional, but the default of 0 is unlikely to be what you want.
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+import datetime
+
+t = datetime.time(1, 2, 3)
+print(t)
+
+print ('Earliest  :', datetime.time.min)
+print ('Latest    :', datetime.time.max)
+print ('Resolution:', datetime.time.resolution)
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+
+<BR><BR><BR>
+
+
+This example prints the current date in several formats:
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+import datetime
+
+today = datetime.date.today()
+print (today)
+print ('ctime:', today.ctime())
+print ('tuple:', today.timetuple())
+print ('ordinal:', today.toordinal())
+print ('Year:', today.year)
+print ('Mon :', today.month)
+print ('Day :', today.day)
+
+print ('Earliest  :', datetime.date.min)
+print ('Latest    :', datetime.date.max)
+print ('Resolution:', datetime.date.resolution)
+
+d1 = datetime.date(2017, 3, 12)
+print ('d1:', d1)
+
+d2 = d1.replace(year=2018)
+print ('d2:', d2)
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+<BR><BR>
+<h2>Date Arithmetic</h2>
+Date math uses the standard arithmetic operators. This example with date objects illustrates using timedelta objects to compute new dates, and subtracting date instances to produce timedeltas (including a negative delta value).
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+import datetime
+
+today = datetime.date.today()
+print ('Today    :', today)
+
+one_day = datetime.timedelta(days=1)
+print ('One day  :', one_day)
+
+yesterday = today - one_day
+print ('Yesterday:', yesterday)
+
+tomorrow = today + one_day
+print ('Tomorrow :', tomorrow)
+
+print ('tomorrow - yesterday:', tomorrow - yesterday)
+print ('yesterday - tomorrow:', yesterday - tomorrow)
+
+
+print ('\nTimes:')
+t1 = datetime.time(12, 55, 0)
+print ('\tt1:', t1)
+t2 = datetime.time(13, 5, 0)
+print ('\tt2:', t2)
+print ('\tt1 < t2:', t1 < t2)
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+
+
+<BR><BR>
+<h2>Formatting and Parsing</h2>
+
+The default string representation of a datetime object uses the ISO 8601 format (YYYY-MM-DDTHH:MM:SS.mmmmmm). Alternate formats can be generated using strftime(). Similarly, if your input data includes timestamp values parsable with time.strptime(), then datetime.strptime() is a convenient way to convert them to datetime instances.
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+import datetime
+
+format = "%a %b %d %H:%M:%S %Y"
+
+today = datetime.datetime.today()
+print ('ISO     :', today)
+
+s = today.strftime(format)
+print ('strftime:', s)
+
+d = datetime.datetime.strptime(s, format)
+print ('strptime:', d.strftime(format))
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
 
 
 </body>
