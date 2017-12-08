@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DataCamp Light | Standalone example</title>
+  <script>
+  /*
+ DataCamp Light
+ Version 1.1.0
+ */
+! function() {
+    "use strict";
+
+    function e() {
+        function e(e) {
+            return null !== location.hostname.match(e)
+        }
+
+        function t(e) {
+            for (var t = 0; t < i.length; t++) i[t].getElementsByTagName("a")[0].href = e
+        }
+
+        function a() {
+            for (; i[0];) i[0].parentNode.removeChild(i[0])
+        }
+        var i = document.getElementsByClassName("powered-by-datacamp");
+        e("r-bloggers.com") ? t("https://www.datacamp.com?tap_a=5644-dce66f&tap_s=10907-287229") : a()
+    }
+
+    function t(e) {
+        e.className += " datacamp-exercise";
+        if ("height" in e.dataset && "auto" !== e.dataset.height) {
+            var t = Math.round(e.dataset.height);
+            if (isNaN(t)) console.log("Invalid height attribute.");
+            else if (t >= p) {
+                e.style.height = t + "px";
+                var a = "height:" + t + "px;";
+                e.setAttribute("style", a)
+            } else console.log("The height attribute should be >= " + p + ".")
+        }
+        "encoded" in e.dataset && (e.innerHTML = '<div class="encoded">' + e.innerHTML.trim() + "</div>"), e.innerHTML += '<!--[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]--><div ng-controller="NormalExerciseController"><div class="dcl-exercise-area" resize-layout=""><div class="dcl-left-pane" ng-class="{\'dcl-mini\': useMiniLayout}"><ul class="dcl-content--tab"><li><a href="" ng-click="activateLeftTab(\'usercode\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'usercode\')}">script.{{backendConfig.extension}}</a></li><li ng-show="solutionTabShown"><a class="dcl-animation--flash" href="" ng-click="activateLeftTab(\'solution\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'solution\')}">solution.{{backendConfig.extension}}</a></li><li><a href="" ng-show="useMiniLayout" ng-click="activateLeftTab(\'console\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'console\')}">{{backendConfig.console}}</a></li><li><a href="" ng-show="useMiniLayout && plotTabShown" ng-click="activateLeftTab(\'plots\')" ng-class="{\'dcl-active\': isActiveLeftTab(\'plots\')}">Plots</a></li></ul><div class="dcl-content--tab-body"><div code-editor="" control="editor" ng-show="isActiveLeftTab(\'usercode\') || isActiveLeftTab(\'solution\')" ng-model="userCode"></div><div ng-show="isActiveLeftTab(\'console\')" class="dcl-console-target dcl-console-mini-target"></div><div ng-show="isActiveLeftTab(\'plots\')" class="dcl-plots-mini-target"></div><div growl="" ng-show="!isActiveLeftTab(\'plots\')" inline="true" limit-messages="1" sct-feedback="" class="sct-feedback-container"></div></div></div><div ng-show="!useMiniLayout" class="dcl-right-pane clearfix"><ul class="dcl-content--tab"><li><a href="" ng-click="activateRightTab(\'console\')" ng-class="{\'dcl-active\': isActiveRightTab(\'console\')}">{{backendConfig.console}}</a></li><li><a ng-show="plotTabShown" href="" ng-click="activateRightTab(\'plots\')" ng-class="{\'dcl-active\': isActiveRightTab(\'plots\')}">Plots</a></li></ul><div class="dcl-content--tab-body"><div ng-show="isActiveRightTab(\'console\')" control="console" class="dcl-console-target dcl-console-full-target"><console class="dcl-console"></console></div><div ng-show="isActiveRightTab(\'plots\')" class="dcl-plots-full-target"><plots-container class="dcl-plots-container"></plots-container></div></div></div></div><action-panel exercise="exercise"></action-panel></div>';
+        var i = '<div class="powered-by-datacamp"><a href="https://www.datacamp.com">Powered by DataCamp<div class="logo"></div></a></div>',
+            o = document.createElement("div");
+        o.innerHTML = i;
+        var c = o.firstChild;
+        e.parentNode.insertBefore(c, e.nextSibling)
+    }
+
+    function a(e) {
+        var t = document.createElement("script");
+        t.type = "text/javascript", t.src = e, t.charset = "utf-8", l("body", t)
+    }
+
+    function i(e) {
+        var t = document.createElement("link");
+        t.type = "text/css", t.rel = "stylesheet", t.href = e, l("head", t)
+    }
+
+    function o() {
+        var a = document.querySelectorAll("[data-datacamp-exercise]");
+        0 === a.length && console.log("No DataCamp Light exercises found. Make sure the exercise has the 'data-datacamp-exercise' attribute.");
+        for (var i = 0; i < a.length; i++) ! function(e) {
+            var i = a[e];
+            (" " + i.className + " ").indexOf(" datacamp-exercise ") > -1 || t(i)
+        }(i);
+        e()
+    }
+
+    function c() {
+        o(), a(g + "script-8fa338a2dc.js")
+    }
+
+    function n() {
+        o(), window.bootstrapDCLightExercises()
+    }
+
+    function s() {
+        d();
+        for (var e = [g + "style-8c2f2e17fe.css", "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"], t = 0; t < e.length; t++) i(e[t])
+    }
+
+    function l(e, t) {
+        document.getElementsByTagName(e)[0].appendChild(t)
+    }
+
+    function d() {
+        var e = document.createElement("style");
+        e.type = "text/css", l("head", e);
+        var t = 'div.datacamp-exercise {  margin: 0;  border: 1px solid #d5eaef;  background: none;  position: relative;  min-height: 300px;  color: black;  box-shadow: none;}div[data-datacamp-exercise] {  margin: 0;  border: 1px solid #d5eaef;  background: #fff url(https://cdn.datacamp.com/spinner.gif) no-repeat center center !important;  background-size: auto 80px !important;  position: relative;  min-height: 300px;  color: transparent;  box-shadow: none;}div[data-datacamp-exercise] > code,div[data-datacamp-exercise] > div,div[data-datacamp-exercise] > p {  display: none;}div.powered-by-datacamp {  margin: 5px 0;  display: block;}div.powered-by-datacamp a {@import "https://fonts.googleapis.com/css?family=Open+Sans";  font-family: "Open Sans", sans-serif;  text-decoration: none;  border: 0;  color: #3ac;  font-size: 20px;}div.powered-by-datacamp .logo {  vertical-align: sub;  display: inline-block;  background: url("https://cdn.datacamp.com/dcl/assets/images/logo_blue.svg") no-repeat center center;  background-size: contain;  height: 27px;  width: 23px;  margin-left: 4px;}';
+        e.styleSheet ? e.styleSheet.cssText = t : e.innerHTML = t
+    }
+
+    function r() {
+        return "function" == typeof window.initAddedDCLightExercises
+    }
+    var p = 300,
+        g = "https://cdn.datacamp.com/dcl/";
+    r() ? console.log("Warning: tried to load DataCamp Light multiple times.") : (window.initAddedDCLightExercises = n, s(), "complete" == document.readyState || "loaded" == document.readyState || "interactive" == document.readyState ? c() : document.addEventListener("DOMContentLoaded", c))
+}();
+  
+  
+  </script>
+
+  <style>
+    .exercise {
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<h3>Problem 1</h3>
+Some one forgot something here on line 1?
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+def sqrt(n)
+    val = n ** 0.5
+    return n
+
+sqrt(9)
+sqrt(16)
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+<BR><BR>
+  
+  <h3>Problem 2</h3>
+  This has a few errors in it! Can you find them and fix them?
+  <div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+# Python program to find the factorial of a number provided by the user.
+
+# change the value for a different result
+num = 7
+
+# uncomment to take input from the user
+#num = int(input("Enter a number: "))
+
+factorial = 1
+
+# check if the number is negative, positive or zero
+if num  0
+   print("Sorry, factorial does not exist for negative numbers")
+elif num = 0:
+   pint("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+<BR><BR>
+
+<h3>Problem 3</h3>
+This is a little harder to debug since the functionality is wrong... it still runs fine .. just wrong<BR>
+  This has a few errors in it! Can you find them and fix them?<BR>
+  - first start with a small number you know is prime (keep it simlple)<BR>
+  - Why does that not work? - its a simple flip of one thing...<BR>
+  - Set it to a small prime .. you see you get weird functionality<BR>
+    (again its just one thing that is flipped... but harder to spot)
+  <div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+# Python program to check if the input number is prime or not
+
+num = 407
+
+# prime numbers are greater than 1
+if num < 1:
+   # check for factors
+   for i in range(2,num):
+       if (num / i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"is not a prime number")
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+<BR><BR>
+
+
+  <h3>Problem 4</h3>
+  Can you do that with types and assignment>?
+  <div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+def sqrt(n):
+    val = n ** 0.5
+    return n
+
+print(sqrt(9))
+print(sqrt("bob"))
+
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+<BR><BR>
+
+
+  
+
+  <h3>Problem 5</h3>
+  Now that is just classless?<BR>
+  Also everytime you make this mistake you have to give Joe $.25 during the semester...<BR>
+  This has 2 errors (of omission).
+  <div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+class Point:
+
+    def __init__(x=0.0, y=0.0, z=0.0):
+        '''Custom initialization'''
+        self.mX = x
+        self.mY = y 
+        self.mZ = z
+
+    def __str__(self):
+        '''Print out the String of this object's values'''
+        return '({}, {}, {})'.format(
+            str(self.mX),str(self.mY),str(self.mZ))
+
+    def SetPoint(x=None, y=None, z=None):
+        '''Set new locations for the point'''
+        if x is not None:
+            self.mX = x
+        if y is not None:
+            self.mY = y
+        if z is not None:
+            self.mZ = z
+
+def main():
+    p1 = Point (2.0, 3.0, 4.0)
+    p1.SetPoint(10.0, 10.0, 10.0)
+    print('Complete!')
+
+if __name__ == "__main__":
+    main()
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+    </div>
+<BR><BR>
+
+</body>
+</html>
