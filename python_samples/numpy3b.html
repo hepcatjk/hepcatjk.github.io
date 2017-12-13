@@ -148,7 +148,7 @@ print(np.dot(x, y))
     </div>
 <BR><BR>
 
-You can also compute the <b>sum</b>:
+You can also compute the <b>sum</b> and <b>prod</b> product:
 <div class="container">
       <div data-datacamp-exercise data-lang="python" data-height="auto">
         <code data-type="pre-exercise-code">
@@ -163,6 +163,61 @@ print(np.sum(x))  # Compute sum of all elements; prints "10"
 print(np.sum(x, axis=0))  # Compute sum of each column; prints "[4 6]"
 print(np.sum(x, axis=1))  # Compute sum of each row; prints "[3 7]"
 
+print(np.prod(x)) # multiply all the elements
+
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+
+    </div>
+
+<BR><BR>
+
+There are a wide range of useful functions, below demonstrates a few common ones:
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+import numpy as np
+
+a = np.array([2, 1, 9], float)
+
+print( a.mean() )  # mean
+print( a.var() ) # variance
+print( a.min(), a.max() ) #min and max
+print( a.argmin(), a.argmax() ) #min and max indices
+ 
+</code>
+
+        <code data-type="solution"></code>
+        <code data-type="sct"></code>
+        <div data-type="hint">Just Press<code>Run</code>.</div>
+      </div>
+
+    </div>
+<BR><BR>
+
+In addition to the mean, var, and std functions, NumPy supplies several other methods for
+returning statistical features of arrays:
+<div class="container">
+      <div data-datacamp-exercise data-lang="python" data-height="auto">
+        <code data-type="pre-exercise-code">
+        
+        </code>
+        <code data-type="sample-code">
+import numpy as np
+
+ a = np.array([1, 4, 3, 8, 9, 2, 3], float)
+
+print( np.median(a) )  #median
+print( np.corrcoef(a) ) # correlation coefficient
+print( np.cov(a) ) #covariance
+ 
 </code>
 
         <code data-type="solution"></code>
