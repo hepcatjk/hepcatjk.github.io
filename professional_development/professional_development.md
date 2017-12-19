@@ -98,20 +98,19 @@ There are really two ways to create a website these days: Use a content manageme
 
 
 **Examples** of my past /current students (for inspiration):
-[Isabela Rovira](https://www.irovira.com/) - in progress site.
-[John Sermarini](https://johnsermarini.com/) - John just made his over the summer!
-[Karl Li](http://www.yiningkarlli.com) - current Cornell Master's student
-[Dan Knowlton](https://danknowlton.com/)
-[Lars Schumann](http://www.larsi.org) - (my colleague, not student) - more hardware focused
-[Jeremy Newlin](http://projects.jeremynewlin.info/)
-[Peter Kutz](http://www.peterkutz.com/) - everyone drools over this.
-[Marrisa Krupen](http://marissakrupen.com/)
+- [Isabela Rovira](https://www.irovira.com/) - in progress site.
+- [John Sermarini](https://johnsermarini.com/) - John just made his over the summer!
+- [Karl Li](http://www.yiningkarlli.com) - current Cornell Master's student
+- [Dan Knowlton](https://danknowlton.com/)
+- [Lars Schumann](http://www.larsi.org) - (my colleague, not student) - more hardware focused
+- [Jeremy Newlin](http://projects.jeremynewlin.info/)
+- [Peter Kutz](http://www.peterkutz.com/) - everyone drools over this.
+- [Marrisa Krupen](http://marissakrupen.com/)
 
 **Examples** of not my students, but great examples (for inspiration):
-
-[Rohan Singh Rajput](https://rohan0401.github.io)
-[IQ](http://iquilezles.org/index.html) - you would too if they were your intials :)
-[Benedik Bitterli](https://benedikt-bitterli.me/ ) - nice clean site
+- [Rohan Singh Rajput](https://rohan0401.github.io)
+- [IQ](http://iquilezles.org/index.html) - you would too if they were your intials :)
+- [Benedik Bitterli](https://benedikt-bitterli.me/ ) - nice clean site
 
 
 
@@ -141,10 +140,10 @@ We live in a world with Youtube. So there are two aspects here - you make short 
 
 
 **Examples** of my past /current students (for inspiration):
-[Karl Li current one](http://yiningkarlli.com/demoreel.html) ... here is [an older version](https://vimeo.com/20909195) and [an even older version](https://vimeo.com/20205051)
-[Isabela Rovira](https://www.irovira.com/projects/5804834) - in progress site.
-[Dan Knowlton](https://danknowlton.com/)
-[Jeremy Newlin](https://vimeo.com/82315712)
-[Kaitlin Pollock](https://vimeo.com/29504461)
-[Marissa Krupen 2016](https://vimeo.com/154743081) and [her 2012 reel](https://vimeo.com/51125974)
+- [Karl Li current one](http://yiningkarlli.com/demoreel.html) ... here is [an older version](https://vimeo.com/20909195) and [an even older version](https://vimeo.com/20205051)
+- [Isabela Rovira](https://www.irovira.com/projects/5804834) - in progress site.
+- [Dan Knowlton](https://danknowlton.com/)
+- [Jeremy Newlin](https://vimeo.com/82315712)
+- [Kaitlin Pollock](https://vimeo.com/29504461)
+- [Marissa Krupen 2016](https://vimeo.com/154743081) and [her 2012 reel](https://vimeo.com/51125974)
 
