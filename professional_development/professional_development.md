@@ -5,7 +5,7 @@ Put yourself in a recruiters shoes - you have a stack of resumes and everyone ha
 
 A good way to differentiate  you from the stack is to have the resume in order - but also have a website, blog, and possibly a demo reel / videos to enhance your image. These extra items showcase your technical abilities but also gives the viewer insight into who you are as a person – how you present yourself, what your interests are, and a dose of your personality. This allows people to see how you think - how you attacked the problem. And if you will be a 'culture' fit too.
 
-** A few generalities: **
+**A few generalities:**
 - Use Images and infographics wherever  you can - they say 1000 words (so you don't have to).
 - Breaks are a great time to focus and work on these 5 areas.
 - Separate  "design" from "content" so you can change either without affect the other
@@ -13,7 +13,7 @@ A good way to differentiate  you from the stack is to have the resume in order -
 - Don't pad with filler (shorter is better).
 - Best first. (screw chronological order whenever  you can)
 
-** Here we will cover 5 Parts explain each and provide examples: **
+**Here we will cover 5 Parts explain each and provide examples:**
 1. Resume
 2. Side Projects
 3. Website
