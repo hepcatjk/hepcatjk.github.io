@@ -44,7 +44,7 @@ Your resume should include: Education, Work Experience, Skills, Personal Project
 
 ### Side Projects
 ---
-This is arguably  ** the most important part **. People want to see you extending and applying your knowledge from the classroom. A 4.0 GPA is worthless without outside experience and projects. You get this experience two ways: first is sponsored work from internships, research work, and job work. Second is extending class projects into something deeper, pushing them further and working on side coding, hardware, and art projects. The best students I have mentored have been judged almost exclusively on their side research and project work. Everything else is just a way to show off this cool work.
+This is arguably  **the most important part**. People want to see you extending and applying your knowledge from the classroom. A 4.0 GPA is worthless without outside experience and projects. You get this experience two ways: first is sponsored work from internships, research work, and job work. Second is extending class projects into something deeper, pushing them further and working on side coding, hardware, and art projects. The best students I have mentored have been judged almost exclusively on their side research and project work. Everything else is just a way to show off this cool work.
 
 - Start small, do it often
 - Plan first, attack and adjust
