@@ -127,10 +127,17 @@ colors = np.random.rand(N)
 
 fig, ax = plt.subplots(nrows=1, ncols=2)
 
-plt.subplot(121)
-plt.scatter(x, y, s=1, c=colors)
+axes = plt.subplot(121)
+plt.xlim(0.0,100.)   
+plt.ylim(0.0,100.)
+axes.set_aspect(1.) 
+plt.scatter(x, y, s=4, c=colors)
+plt.show()
 
-plt.subplot(122)
+axes = plt.subplot(122)
+plt.xlim(0.0,100)
+plt.ylim(0.0,60)
+axes.set_aspect(100/60.0) 
 plt.hist(x, 10)
 plt.show()
 
@@ -140,6 +147,7 @@ plt.show()
 
 #### Space so we can show off the cool graph and have enough room
 #### When you run this we produce a big graph
+
 
 
 
