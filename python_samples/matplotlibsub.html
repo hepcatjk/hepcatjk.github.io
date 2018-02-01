@@ -127,11 +127,10 @@ colors = np.random.rand(N)
 
 fig, ax = plt.subplots(nrows=1, ncols=2)
 
-plt.subplot(221)
+plt.subplot(121)
 plt.scatter(x, y, s=1, c=colors)
-plt.show()
 
-plt.subplot(222)
+plt.subplot(122)
 plt.hist(x, 10)
 plt.show()
 
