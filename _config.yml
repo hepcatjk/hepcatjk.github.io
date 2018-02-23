@@ -1,0 +1,16 @@
+# Site Settings
+title: Joseph Kider
+email: jkider@ist.ucf.edu
+description: >
+  I am an Assistant Professor at the Institute for Simulation and Training at 
+  the University of Central Florida in Orlando, Florida.
+baseurl: ""
+url: "http://hepcatjk.github.io"
+twitter_username: kiderj
+github_username:  hepcatjk
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
