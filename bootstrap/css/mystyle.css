@@ -356,6 +356,14 @@ div.circleBehind a:hover:after {
 .utubetop:hover {background-image: url("../../imgs/icons/utube.svg");}
 .utubetop {background-image: url("../../imgs/icons/utubeg.svg");}
 
+.utubetop_pre {background-image: url("../../imgs/icons/utube.svg") no-repeat -9999px -9999px;}
+.twittertop_pre {background-image: url("../../imgs/icons/twitter.svg") no-repeat -9999px -9999px;}
+.skypetop_pre {background-image: url("../../imgs/icons/skypeg.svg") no-repeat -9999px -9999px;}
+.snapchattop_pre {background-image: url("../../imgs/icons/snapchatg.svg") no-repeat -9999px -9999px;}
+.linkedintop_pre {background-image: url("../../imgs/icons/linkeding.svg") no-repeat -9999px -9999px;}
+.instagramtop_pre {background-image: url("../../imgs/icons/instagramg.svg") no-repeat -9999px -9999px;}
+.githubtop_pre {background-image: url("../../imgs/icons/githubg.svg") no-repeat -9999px -9999px;}
+.facebooktop_pre {background-image: url("../../imgs/icons/facebookg.svg") no-repeat -9999px -9999px;}
 
 
 /*contact Section*/
