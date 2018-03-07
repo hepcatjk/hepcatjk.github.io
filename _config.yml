@@ -16,3 +16,4 @@ kramdown:
   input: GFM
 collections:
   - publications
+exclude: [professional_development]
