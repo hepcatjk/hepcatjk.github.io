@@ -13,10 +13,10 @@ layout: default
 
         <div class="row" style="padding-bottom: 18px;">
             {% for item in site.data.news %}
-            <div class="col-xs-1 col-sm-1 col-md-1" style="padding-bottom: 8px;">
+            <div class="col-md-2">
             <B>{{ item.date }}</B>
             </div>
-            <div class="col-xs-11 col-sm-11 col-md-11 custom_about">
+            <div class="col-md-10 custom_about" style="padding-bottom: 18px;">
             {{ item.name }} 
             </div>
             {% endfor %}
