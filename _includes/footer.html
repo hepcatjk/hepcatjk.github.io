@@ -1,39 +1,3 @@
-    <script type="text/javascript">
-    $(document).ready(function() {
-
-    var toggleAffix = function(affixElement, scrollElement, wrapper) {
-
-    var height = affixElement.outerHeight(),
-        top = wrapper.offset().top;
-
-    if (scrollElement.scrollTop() >= top+20){
-        wrapper.height(height);
-        affixElement.addClass("affix");
-    }
-    else {
-        affixElement.removeClass("affix");
-        wrapper.height('auto');
-    }
-      
-    };
-
-
-    $('[data-toggle="affix"]').each(function() {
-    var ele = $(this),
-        wrapper = $('<div><\/div>');
-
-    ele.before(wrapper);
-    $(window).on('scroll resize', function() {
-        toggleAffix(ele, $(this), wrapper);
-    });
-
-    // init
-    toggleAffix(ele, $(window), wrapper);
-    });
-
-    });
-    </script>
-
 <footer id="main-footer" role="contentinfo">
     <div class="container">
         <div id="footer-logo">
@@ -77,16 +41,79 @@
     <div class="container">
        <div class="row"> 
            <div class="col-md-12 text-center social-link">
-                <h4>Copyright &copy; Joseph T. Kider Jr. - 2018</h4>
+                <h4>Copyright &copy; Joseph T. Kider Jr. - {{ 'now' | date: "%Y" }}</h4>
                 <ul class="socail-link list-inline">
                     <li><a href="https://www.facebook.com/kiderj"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://twitter.com/kiderj"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="https://www.youtube.com/user/thekiderj"><i class="fa fa-youtube"></i></a></li>
                     <li><a href="https://github.com/hepcatjk?tab=repositories"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.instagram.com/kiderj/"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/kiderj"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{{site.url}}/assets/js/jquery-min.js"></script>
+    <script src="{{site.url}}/assets/js/popper.js"></script>
+    <script src="{{site.url}}/assets/js/popper.min.js"></script>
+    <script src="{{site.url}}/assets/js/bootstrap.min.js"></script>
+    <script src="{{site.url}}/assets/js/jquery.mixitup.js"></script>
+    <script src="{{site.url}}/assets/js/jquery.counterup.min.js"></script>
+    <script src="{{site.url}}/assets/js/waypoints.min.js"></script>
+    <script src="{{site.url}}/assets/js/wow.js"></script>
+    <script src="{{site.url}}/assets/js/jquery.nav.js"></script>
+    <script src="{{site.url}}/assets/js/jquery.easing.min.js"></script>  
+    <script src="{{site.url}}/assets/js/nivo-lightbox.js"></script>
+    <script src="{{site.url}}/assets/js/jquery.slicknav.js"></script>
+    <script src="{{site.url}}/assets/js/main.js"></script>
+    <script src="{{site.url}}/assets/js/tooltip.js"></script>
+
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+        var toggleAffix = function(affixElement, scrollElement, wrapper) {
+
+        var height = affixElement.outerHeight(),
+            top = wrapper.offset().top;
+
+        if (scrollElement.scrollTop() >= top+20){
+            wrapper.height(height);
+            affixElement.addClass("affix");
+        }
+        else {
+            affixElement.removeClass("affix");
+            wrapper.height('auto');
+        }
+
+        };
+
+        $('[data-toggle="affix"]').each(function() {
+        var ele = $(this),
+            wrapper = $('<div><\/div>');
+
+        ele.before(wrapper);
+        $(window).on('scroll resize', function() {
+            toggleAffix(ele, $(this), wrapper);
+        });
+            // init
+        toggleAffix(ele, $(window), wrapper);
+        });
+
+        });
+    </script>

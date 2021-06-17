@@ -1,10 +1,11 @@
-
-
+    <!-- Header Area wrapper Starts -->
+<header id="header-wrap">
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-light" data-toggle="affix">
         <div class="menucontainer container">
             <a class="navbar-brand" href="http://josephkider.com">Joseph Kider<br>
             <div class="nav-lower-brand">
-                Code &amp; Sustainable Design
+                Code &amp; SENSEable Design
             </div>
             </a> 
             <button aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler custom-toggler " data-target="#navbarsExampleDefault" data-toggle="collapse" type="button">
@@ -12,7 +13,6 @@
             </button>
             <div class="collapse navbar-collapse circleBehind" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
                 {% for page in site.pages %} {% if page.title %}
                 <li class="nav-item"><a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                 {% endif %} {% endfor %}
@@ -20,3 +20,7 @@
             </div>
         </div>
 </nav>
+
+
+</header>
+<!-- Header Area wrapper End -->
