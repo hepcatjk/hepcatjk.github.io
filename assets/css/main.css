@@ -746,7 +746,7 @@ div.circleBehind a:hover:after {
   background: #fff;
 }
 
-#teaching {
+#Teaching {
   background: #f2f2f2;
 }
 
@@ -819,7 +819,7 @@ div.circleBehind a:hover:after {
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(0, 180, 217, 0.6);
+  background: rgba(204, 153, 0, 0.6);
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
