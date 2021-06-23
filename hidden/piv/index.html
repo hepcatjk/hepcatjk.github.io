@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Test1-webgl</title>
+    <title>Unity WebGL Player | TechGroove</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Test1-webgl</div>
+        <div id="unity-build-title">TechGroove</div>
       </div>
     </div>
     <script>
@@ -58,12 +58,12 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/export.loader.js";
       var config = {
-        dataUrl: buildUrl + "/export.data.gz",
-        frameworkUrl: buildUrl + "/export.framework.js.gz",
-        codeUrl: buildUrl + "/export.wasm.gz",
+        dataUrl: buildUrl + "/export.data.unityweb",
+        frameworkUrl: buildUrl + "/export.framework.js.unityweb",
+        codeUrl: buildUrl + "/export.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Test1-webgl",
+        companyName: "University of Central Florida",
+        productName: "TechGroove",
         productVersion: "0.1",
         showBanner: unityShowBanner,
       };
@@ -99,6 +99,7 @@
         canvas.style.height = "600px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/export.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
