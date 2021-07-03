@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">TechGroove</div>
+        <div id="unity-build-title">TechGroove UCF (SENSEable Design Lab)</div>
       </div>
     </div>
     <script>
@@ -56,13 +56,13 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/export.loader.js";
+      var loaderUrl = buildUrl + "/EXPORT-webGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/export.data.unityweb",
-        frameworkUrl: buildUrl + "/export.framework.js.unityweb",
-        codeUrl: buildUrl + "/export.wasm.unityweb",
+        dataUrl: buildUrl + "/EXPORT-webGL.data.unityweb",
+        frameworkUrl: buildUrl + "/EXPORT-webGL.framework.js.unityweb",
+        codeUrl: buildUrl + "/EXPORT-webGL.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "University of Central Florida",
+        companyName: "DefaultCompany",
         productName: "TechGroove",
         productVersion: "0.1",
         showBanner: unityShowBanner,
@@ -99,7 +99,6 @@
         canvas.style.height = "600px";
       }
 
-      canvas.style.background = "url('" + buildUrl + "/export.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
