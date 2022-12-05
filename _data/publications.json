@@ -155,10 +155,10 @@
   },
   {
     "title":"Particle-based Flow Vorticity Analysis by Use of Second-generation Wavelets",
-    "link":"",
+    "link":"https://www.witpress.com/elibrary/wit-transactions-on-engineering-sciences/130/37975",
     "authors":"Oddny Brun, Joseph T. Kider Jr., R. Paul Wiegand",
     "conference":"Journal of Computational Methods and Experimental Measurements",
-    "year":"(Accepted) 2021"
+    "year":"2021"
   },
   {
     "title":"Physics-Based Real-Time DynamicGeneration of Temporal Energy Maps for Virtual Training in Realistic IR Sensors Simulators",
@@ -169,37 +169,52 @@
   },
   {
     "title":"Kinematic Evaluation of Linear and Parabolic Pointing in Virtual Reality",
-    "link":"",
+    "link":"https://journals.sagepub.com/doi/abs/10.1177/1071181321651131",
     "authors":"John Sermarini, Joseph T. Kider Jr., Joseph J. LaViola Jr., Daniel S. McConnell",
     "conference":"Human Factors and Ergonomics Society Annual Meeting (HFES)",
     "year":"(Accepted) 2021"
   },
   {
     "title":"Whole-building energy simulation analysis and optimization of residential building equipped with air-duct system in three different regions",
-    "link":"",
+    "link":"https://publications.ibpsa.org/conference/paper/?id=bs2021_30161",
     "authors":"Arash Zarmehr, Joseph T. Kider Jr.",
     "conference":"Building Simulation",
-    "year":"(Accepted) 2021"
+    "year":"2021"
   },
     {
     "title":"Radiant spectral energy for simulation in the built environment",
-    "link":"",
+    "link":"https://publications.ibpsa.org/conference/paper/?id=bs2021_30753",
     "authors":"Joseph Del Rocco, Joseph T. Kider Jr.",
     "conference":"Building Simulation",
-    "year":"(Accepted) 2021"
+    "year":"2021"
   },
     {
     "title":"A critical review of the effectiveness of the Sustainability Tracking, Assessment Rating System (STARS) framework on campus sustainability",
-    "link":"",
+    "link":"https://publications.ibpsa.org/conference/paper/?id=bs2021_31030",
     "authors":"Lauren Doocy, Arash Zarmehr, Joseph T. Kider Jr.",
     "conference":"Building Simulation",
-    "year":"(Accepted) 2021"
+    "year":"2021"
   },
   {
     "title":"Embodied facade retrofit design with Augmented Reality in the built environment",
-    "link":"",
+    "link":"https://publications.ibpsa.org/conference/paper/?id=bs2021_30984",
     "authors":"John Sermarini, Joseph J. LaViola Jr., Roger Azevedo, Lori C. Walters, Robert Michlowitz, Joseph T. Kider Jr.",
     "conference":"Building Simulation",
-    "year":"(Accepted) 2021"
+    "year":"2021"
+  },
+  {
+    "title":"Coherent vorticity and discontinuous flow in particle-based SPH modeling",
+    "link":"https://www.witpress.com/elibrary/cmem-volumes/10/3/2931",
+    "authors":"Oddny Brun, Joseph T. Kider Jr., R. Paul Wiegand",
+    "conference":"International Journal of Computational Methods and Experimental Measurements",
+    "year":"2022"
+  },
+  {
+    "title":"BIM Driven Retrofitting Design Evaluation of Building Facades",
+    "link":"https://dl.acm.org/doi/abs/10.1145/3565970.3567688",
+    "authors":"John Sermarini, Robert Michlowitz, Joseph J. LaViola Jr., Roger Azevedo, Lori C. Walters, Joseph T. Kider Jr.",
+    "conference":"Symposium on Spatial User Interaction",
+    "year":"2022"
   }
+
 ]
