@@ -222,6 +222,33 @@
     "authors":"John Sermarini, Robert Michlowitz, Joseph J. LaViola Jr., Roger Azevedo, Lori C. Walters, Joseph T. Kider Jr.",
     "conference":"Symposium on Spatial User Interaction",
     "year":"2022"
+  },
+  {
+    "title":"Wearables for Well-being: A Longitudinal in situ Study of Smartwatches to Understand and enhance Line-level Housekeeping Work",
+    "link":"https://dl.acm.org/doi/abs/10.1145/3565970.3567688",
+    "authors":"Aaron Necaise, Cynthia Mejia, Joseph T. Kider Jr., Mindy Shoss, and Mary Jean Amon",
+    "conference":"accepted to the International Journal of Human–Computer Interaction (IJHCI)",
+    "year":"2023"
+  },
+  {
+    "title":"Six Human-Centered Artificial Intelligence Grand Challenges",
+    "link":"https://www.tandfonline.com/doi/full/10.1080/10447318.2022.2153320",
+    "authors":"Ozlem Garibay, Brent Winslow, Salvatore Andolina, Margherita Antona, Anja Bodenschatz, Constantinos Coursaris, Gregory Falco, Stephen M. Fiore, Ivan Garibay, Keri Grieman, John C. Havens, Marina Jirot, Hernisa Kacorr, Waldemar Karwowski, Joseph T. Kider Jr., Joe Konstan; Sean Koon, Monica Lopez-Gonzalez, Iliana Maifeld-Carucci, Sean McGregor, Gavriel Salvendy, Ben Shneiderman, Constantine Stephanidis, Christina Strobel, Carolyn Ten Holter, Wei Xu",
+    "conference":"International Journal of Human–Computer Interaction (IJHCI)",
+    "year":"2023"
+  },
+  {
+    "title":"MemoryScan Environments: Creating Large-Scale Memory-Evocative Digital Twins",
+    "link":"",
+    "authors":"Lori C. Walters, Robert Michlowitz, Esteban Segarra Martinez, Ryan McMahan, Joseph T. Kider Jr.",
+    "conference":"accepted to the IEEE Digital Twins and Parallel Intelligence (DTPI)",
+    "year":"2023"
+  },
+  {
+    "title":"Investigating the Impact of Augmented Reality and BIM on Retrofitting Training for Non-experts",
+    "link":"https://ismar23.org/program-paper-presentations/",
+    "authors":"John Sermarini, Robert Michlowitz, Joseph J. LaViola Jr., Roger Azevedo, Lori C. Walters, Joseph T. Kider Jr.",
+    "conference":"accepted to the IEEE Transactions on Visualization and Computer Graphics special issue for ISMAR",
+    "year":"2023"
   }
-
 ]
