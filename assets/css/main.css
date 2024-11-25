@@ -48,7 +48,7 @@ a a:focus {
 
 p {
   font-weight: 400;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0px;
   font-size: 14px;
 }
@@ -61,6 +61,7 @@ ul, ol {
 
 ul li, ol li {
   list-style: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hero-heading {
@@ -1094,7 +1095,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     float: center;
 }
 .socail-link a i {
-    background: #4b5456;
+    background: #888B8D;
     width: 35px;
     height: 35px;
     border-radius: 100%;
