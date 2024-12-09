@@ -11,7 +11,7 @@ github_username:  hepcatjk
 sass:
   sass_dir: _sass
   source_map: true   # Enable source maps for Sass
-include: ['_pages','_layouts']
+include: ['_pages']
 kramdown:
   input: GFM
 collections:
