@@ -3,7 +3,7 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg navbar-light" data-toggle="affix">
         <div class="menucontainer container">
-            <a class="navbar-brand" href="http://josephkider.com">Joseph Kider<br>
+            <a class="navbar-brand" href="{{ site.url }}">Joseph Kider<br>
             <div class="nav-lower-brand">
                 Code &amp; Pixels
             </div>
@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse circleBehind" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 {% for page in site.pages %} {% if page.title %}
-                <li class="nav-item"><a class="nav-link" href="{{site.url}}/#{{ page.title }}">{{ page.title }}</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{site.url}}/{{ page.title }}/">{{ page.title }}</a></li>
                 {% endif %} {% endfor %}
             </ul>
             </div>

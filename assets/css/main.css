@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
-html {
-  overflow-x: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+html, body {
   background: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -17,6 +19,9 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
 }
 
 h1, h2, h3, h4 {
@@ -28,6 +33,12 @@ h1, h2, h3, h4 {
 .script-font {
   font-family: 'Shadows Into Light', cursive;
 }
+
+.content {
+    flex: 1;  /* Makes sure content area takes up the available space */
+    padding: 20px;
+}
+
 
 a {
   color:#B94700;
@@ -62,6 +73,12 @@ ul, ol {
 ul li, ol li {
   list-style: none;
   font-family: 'Roboto', sans-serif;
+}
+
+.captions
+{
+      font-size: 12px;
+    line-height: 12px !important;
 }
 
 .hero-heading {
@@ -288,7 +305,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .section-padding {
-  padding: 60px 0;
+  padding: 40px 0px 0px 0px;
 }
 
 .section-padding-side {
@@ -332,6 +349,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: relative;
   margin: 20px 0 20px 0;
 }
+
 
 
 
@@ -1071,6 +1089,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   width: 100%;
 }
 
+
 /*Footer Style*/
 
 #section-footer {
@@ -1110,9 +1129,15 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
     color: #fff;
 }
 #main-footer svg#pegasus-logo {
-    height: 70px;
+
     width: 70px;
-    margin: 10px 0;
+
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    min-height: 60px; /* Ensures the footer has a minimum height */
+    margin-top: auto;  /* Pushes the footer to the bottom */
 }
 #main-footer #footer-logo {
     position: relative;
