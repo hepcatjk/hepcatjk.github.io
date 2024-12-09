@@ -1,9 +1,8 @@
 # Site Settings
 title: Joseph Kider
-email: jkider@ist.ucf.edu
+email: jkider@clemson.edu
 description: >
-  I am an Assistant Professor at the Institute for Simulation and Training at 
-  the University of Central Florida in Orlando, Florida.
+  I am an Associate Professor at Clemson.
 baseurl: ""
 url: "http://127.0.0.1:4000"
 twitter_username: kiderj
@@ -11,7 +10,8 @@ github_username:  hepcatjk
 # Build Settings
 sass:
   sass_dir: _sass
-include: ['_pages']
+  source_map: true   # Enable source maps for Sass
+include: ['_pages','_layouts']
 kramdown:
   input: GFM
 collections:
